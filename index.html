@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>frontend-pro</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header_container">
+      <img src="./img/png/Logo.png" alt="" class="header_logo">
+      <input type="text" placeholder="Введите запрос" class="header_search">
+    </div>
+  </div>
+  <div class="clients">
+    <div id="overlay" class="addClient_modal_overlay"></div>
+    <div class="clients_container">
+      <h1 class="clients_header">Клиенты</h1>
+      <table class="clients_table">
+        <thead class="clients_table_headers">
+          <tr class="clients_table_headers_row">
+            <th id="ID" class="clients_table_header clients_table_header_id">ID
+              <span class="clients_table_header_arrow"></span>
+            </th>
+            <th id="FIO" class="clients_table_header clients_table_header_FIO">Фамилия Имя Отчество
+              <span class="clients_table_header_arrow"></span>
+              <p class="clients_table_header_FIO_filter">A-Я</p>
+            </th>
+            <th id="date" class="clients_table_header clients_table_header_date">Дата и время создания
+              <span class="clients_table_header_arrow"></span>
+            </th>
+            <th id="lastChanges" class="clients_table_header clients_table_header_lastChanges">Последние изменения
+              <span class="clients_table_header_arrow"></span>
+            </th>
+            <th class="clients_table_header clients_table_header_contacts">Контакты</th>
+            <th class="clients_table_header clients_table_header_actions">Действия</th>
+          </tr>
+        </thead>
+        <tbody class="clients_table_body"></tbody>
+      </table>
+      <button id="addClientBtn" class="addClient"><span class="addClient_img"></span> Добавить клиента</button>
+    </div>
+    <div id="addClientModal" class="addClient_modal">
+      <form class="addClient_modal_form">
+        <button class="addClient_modal_form_close">
+          <span class="addClient_modal_form_close_line"></span>
+          <span class="addClient_modal_form_close_line"></span>
+        </button>
+        <h2 class="addClient_modal_form_header">Новый клиент</h2>
+        <div class="addClient_modal_form_input_block">
+          <span class="addClient_text addClient_text_surname">Фамилия<span class="addClient_text_star">*</span></span>
+          <input class="addClient_modal_form_input addClient_modal_form_input_surname active" placeholder="Фамилия"
+            type="text">
+        </div>
+        <div class="addClient_modal_form_input_block">
+          <span class="addClient_text addClient_text_name">Имя<span class="addClient_text_star">*</span></span>
+          <input class="addClient_modal_form_input addClient_modal_form_input_name" placeholder="Имя" type="text">
+        </div>
+        <div class="addClient_modal_form_input_block">
+          <span class="addClient_text addClient_text_middleName">Отчество<span
+              class="addClient_text_star">*</span></span>
+          <input class="addClient_modal_form_input addClient_modal_form_input_middleName" placeholder="Отчество"
+            type="text">
+        </div>
+        <div class="addClient_modal_form_addContact">
+          <div class="addClient_modal_form_addContact_selects"></div>
+          <span class="addClient_modal_form_addContact_btn">
+            <span class="addClient_modal_form_addContact_plus">
+            </span>Добавить контакт</span>
+        </div>
+        <div class="addClient_modal_form_validateText"></div>
+        <button class="addClient_modal_form_save">Сохранить</button>
+        <button class="addClient_modal_form_cansel">Отмена</button>
+      </form>
+    </div>
+    <div id="changeClient" class="changeClient_modal">
+      <h2 class="changeClient_modal_form_header">Изменить данные
+        <span class="changeClient_id">ID: 123458</span>
+      </h2>
+      <button class="changeClient_modal_form_close">
+        <span class="changeClient_modal_form_close_line"></span>
+        <span class="changeClient_modal_form_close_line"></span>
+      </button>
+      <form class="changeClient_modal_form">
+        <div class="changeClient_modal_input">
+          <span class="changeClient_text">Фамилия<span class="changeClient_text_star">*</span></span>
+          <input class="changeClient_modal_form_input changeClient_modal_form_input_surname" type="text">
+        </div>
+        <div class="changeClient_modal_input">
+          <span class="changeClient_text">Имя<span class="changeClient_text_star">*</span></span>
+          <input class="changeClient_modal_form_input changeClient_modal_form_input_name" type="text">
+        </div>
+        <div class="changeClient_modal_input">
+          <span class="changeClient_text">Отчество<span class="changeClient_text_star">*</span></span>
+          <input class="changeClient_modal_form_input changeClient_modal_form_input_middleName" type="text">
+        </div>
+        <div class="changeClient_modal_form_addContact">
+          <div class="changeClient_modal_form_addContact_selects"></div>
+          <span class="changeClient_modal_form_addContact_btn">
+            <span class="changeClient_modal_form_addContact_plus">
+            </span>Добавить контакт</span>
+        </div>
+        <div class="changeClient_modal_form_validateText"></div>
+        <button class="changeClient_modal_form_save">Сохранить</button>
+        <button class="changeClient_modal_form_cansel">Удалить клиента</button>
+      </form>
+    </div>
+    <div id="deleteClient" class="delete_modal">
+      <button class="delete_modal_close">
+        <span class="delete_modal_close_line"></span>
+        <span class="delete_modal_close_line"></span>
+      </button>
+      <h2 class="delete_modal_header">Удалить Клиента</h2>
+      <p class="delete_modal_text">Вы действительно хотите удалить данного клиента?</p>
+      <button class="delete_modal_yes">Удалить</button>
+      <button class="delete_modal_cansel">Отмена</button>
+    </div>
+  </div>
+  <script defer src="./js/main.js"></script>
+</body>
+
+</html>
