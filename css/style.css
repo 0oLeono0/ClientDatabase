@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Open-sans';
-  src: url(/fonts/OpenSans-Regular.ttf) format("woff2");
+  src: url(../fonts/OpenSans-Regular.ttf) format("woff2");
   font-weight: 400;
   font-style: normal; }
 @font-face {
   font-family: 'Open-sans';
-  src: url(/fonts/OpenSans-SemiBold.ttf) format("woff2");
+  src: url(../fonts/OpenSans-SemiBold.ttf) format("woff2");
   font-weight: 600;
   font-style: normal; }
 @font-face {
   font-family: 'Open-sans';
-  src: url(/fonts/OpenSans-Bold.ttf) format("woff2");
+  src: url(../fonts/OpenSans-Bold.ttf) format("woff2");
   font-weight: 700;
   font-style: normal; }
 html {
@@ -149,7 +149,7 @@ section {
         display: inline-block;
         width: 8px;
         height: 8px;
-        background-image: url(/img/svg/Vector.svg);
+        background-image: url(../img/svg/Vector.svg);
         background-repeat: no-repeat;
         background-size: contain; }
     .clients_table_body {
@@ -229,7 +229,7 @@ section {
         height: 16px;
         display: inline-block;
         opacity: 0.7;
-        background: url(/img/svg/phone.svg);
+        background: url(../img/svg/phone.svg);
         background-size: contain;
         background-repeat: no-repeat;
         margin-right: 7px; }
@@ -244,7 +244,7 @@ section {
         height: 16px;
         display: inline-block;
         opacity: 0.7;
-        background: url(/img/svg/phone.svg);
+        background: url(../img/svg/phone.svg);
         background-size: contain;
         background-repeat: no-repeat;
         margin-right: 7px; }
@@ -259,7 +259,7 @@ section {
         height: 16px;
         display: inline-block;
         opacity: 0.7;
-        background: url(/img/svg/email.svg);
+        background: url(../img/svg/email.svg);
         background-size: contain;
         background-repeat: no-repeat;
         margin-right: 7px; }
@@ -274,7 +274,7 @@ section {
         height: 16px;
         display: inline-block;
         opacity: 0.7;
-        background: url(/img/svg/vk.svg);
+        background: url(../img/svg/vk.svg);
         background-size: contain;
         background-repeat: no-repeat;
         margin-right: 7px; }
@@ -289,7 +289,7 @@ section {
         height: 16px;
         display: inline-block;
         opacity: 0.7;
-        background: url(/img/svg/fb.svg);
+        background: url(../img/svg/fb.svg);
         background-size: contain;
         background-repeat: no-repeat;
         margin-right: 7px; }
@@ -323,7 +323,7 @@ section {
           width: 16px;
           height: 16px;
           display: inline-block;
-          background-image: url(/img/png/edit.png);
+          background-image: url(../img/png/edit.png);
           background-repeat: no-repeat;
           background-size: contain;
           margin-right: 2px; }
@@ -345,7 +345,7 @@ section {
           width: 16px;
           height: 16px;
           display: inline-block;
-          background-image: url(/img/png/cancel.png);
+          background-image: url(../img/png/cancel.png);
           background-repeat: no-repeat;
           background-size: contain;
           margin-right: 2px; }
@@ -494,8 +494,8 @@ section {
           display: inline-block;
           width: 16px;
           height: 16px;
-          -webkit-mask-image: url(/img/svg/cancel.svg);
-                  mask-image: url(/img/svg/cancel.svg);
+          -webkit-mask-image: url(../img/svg/cancel.svg);
+                  mask-image: url(../img/svg/cancel.svg);
           background-color: #B0B0B0;
           background-size: cover; }
         .changeClient_modal_form_addContact_delete.active {
@@ -523,8 +523,8 @@ section {
         .changeClient_modal_form_addContact_btn:hover {
           color: #9873FF; }
         .changeClient_modal_form_addContact_btn:hover .changeClient_modal_form_addContact_plus {
-          -webkit-mask-image: url(/img/svg/addContact_hover.svg);
-                  mask-image: url(/img/svg/addContact_hover.svg);
+          -webkit-mask-image: url(../img/svg/addContact_hover.svg);
+                  mask-image: url(../img/svg/addContact_hover.svg);
           background-color: #9873FF; }
       .changeClient_modal_form_addContact_plus {
         display: inline-block;
@@ -532,8 +532,8 @@ section {
         height: 14px;
         -webkit-transform: translateY(3px);
                 transform: translateY(3px);
-        -webkit-mask-image: url(/img/svg/addContact.svg);
-                mask-image: url(/img/svg/addContact.svg);
+        -webkit-mask-image: url(../img/svg/addContact.svg);
+                mask-image: url(../img/svg/addContact.svg);
         background-color: #9873FF;
         background-size: contain; }
       .changeClient_modal_form_addContact_contact {
@@ -756,8 +756,8 @@ section {
     width: 22px;
     height: 16px;
     margin-right: 10px;
-    -webkit-mask-image: url(/img/svg/addClient.svg);
-            mask-image: url(/img/svg/addClient.svg);
+    -webkit-mask-image: url(../img/svg/addClient.svg);
+            mask-image: url(../img/svg/addClient.svg);
     background-color: #9873FF;
     background-size: cover; }
   .addClient_modal {
@@ -898,7 +898,7 @@ section {
                       transform: translateY(3px);
               width: 12px;
               height: 12px;
-              background: url(/img/svg/select.svg);
+              background: url(../img/svg/select.svg);
               background-repeat: no-repeat;
               background-size: contain; }
           .addClient_modal_form_addContact_select_current {
@@ -971,8 +971,8 @@ section {
             display: inline-block;
             width: 16px;
             height: 16px;
-            -webkit-mask-image: url(/img/svg/cancel.svg);
-                    mask-image: url(/img/svg/cancel.svg);
+            -webkit-mask-image: url(../img/svg/cancel.svg);
+                    mask-image: url(../img/svg/cancel.svg);
             background-color: #B0B0B0;
             background-size: cover; }
           .addClient_modal_form_addContact_delete.active {
@@ -1004,8 +1004,8 @@ section {
           .addClient_modal_form_addContact_btn:hover {
             color: #9873FF; }
           .addClient_modal_form_addContact_btn:hover .addClient_modal_form_addContact_plus {
-            -webkit-mask-image: url(/img/svg/addContact_hover.svg);
-                    mask-image: url(/img/svg/addContact_hover.svg);
+            -webkit-mask-image: url(../img/svg/addContact_hover.svg);
+                    mask-image: url(../img/svg/addContact_hover.svg);
             background-color: #9873FF; }
         .addClient_modal_form_addContact_plus {
           display: inline-block;
@@ -1013,8 +1013,8 @@ section {
           height: 14px;
           -webkit-transform: translateY(3px);
                   transform: translateY(3px);
-          -webkit-mask-image: url(/img/svg/addContact.svg);
-                  mask-image: url(/img/svg/addContact.svg);
+          -webkit-mask-image: url(../img/svg/addContact.svg);
+                  mask-image: url(../img/svg/addContact.svg);
           background-color: #9873FF;
           background-size: contain; }
         .addClient_modal_form_addContact_contact {
